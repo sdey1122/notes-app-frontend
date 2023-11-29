@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<h1 align="center">Notes App Frontend Project</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Image 1](https://github.com/sdey1122/notes-app-frontend/raw/master/s1.png "Image 1")
+![Image 2](https://github.com/sdey1122/notes-app-frontend/raw/master/s2.png "Image 2")
+![Image 3](https://github.com/sdey1122/notes-app-frontend/raw/master/s3.png "Image 3")
 
-## Available Scripts
+## Table of Contents
+- [Introduction](#introduction)
+- [TodoList.js](#todolistjs)
+  - [Imports](#imports)
+  - [Custom Themes](#custom-themes)
+  - [Functional Component](#functional-component)
+  - [useEffect Hooks](#useeffect-hooks)
+  - [Event Handlers](#event-handlers)
+  - [JSX Structure](#jsx-structure)
+- [TodoList.css](#todolistcss)
+  - [CSS Styles](#css-styles)
+- [Global Styling](#global-styling)
+- [Note](#note)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to the Notes App Frontend project. This document provides an overview of the code and styling used in the project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## TodoList.js
 
-### `npm test`
+### Imports
+- React, useState, useEffect: Used for building the component and handling state.
+- Material-UI components (Button, TextField, List, ListItem, ListItemText, IconButton, Grid, ThemeProvider, createTheme, Switch, useTheme): Material-UI is a popular UI library for React that provides styled components and themes.
+- Material-UI Icons (DeleteIcon, EditIcon, CheckIcon, ClearIcon): Icons used for various actions.
+- Transition components from `react-transition-group`: Used for animations.
+- Custom CSS from "TodoList.css": Imported CSS file for styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Custom Themes
+- `lightTheme` and `darkTheme`: Custom Material-UI themes for light and dark modes, defining color palettes, typography, and component styles.
 
-### `npm run build`
+### Functional Component
+- `TodoListThree`: The main functional component representing the todo list application.
+- Manages state variables such as `inputValue`, `editValue`, `todos`, and `isDarkMode` using `useState`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### useEffect Hooks
+- Utilizes `useEffect` hooks for managing local storage and applying dark mode changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Event Handlers
+- `handleAddTodo`: Handles adding new todos to the list.
+- `handleEditTodo`: Initiates editing a todo item.
+- `handleUpdateTodo`: Updates a todo item after editing.
+- `handleCancelEdit`: Cancels editing mode for a todo item.
+- `handleDeleteTodo`: Deletes a todo item.
+- `toggleTheme`: Toggles between light and dark themes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### JSX Structure
+- Uses Material-UI's `ThemeProvider` to apply the selected theme.
+- Renders a form for adding new todos.
+- Maps over `todos` to display a list of items.
+- Animates item transitions using `TransitionGroup` and `CSSTransition`.
 
-### `npm run eject`
+## TodoList.css
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### CSS Styles
+- Defines keyframes for the slide-down fade-in animation.
+- Styles for the animated heading, form, list items, list item text, buttons, and icon buttons.
+- Responsive design adjustments for smaller screens.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Global Styling
+- Provides global styling for the body of the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Note
+- This is just a code summary. You can include explanations and details as needed in your documentation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
