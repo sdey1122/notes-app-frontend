@@ -1,10 +1,9 @@
 <h1 align="center">Notes App Frontend Project</h1>
 
-<p align="center">
-  ![Image 1](https://github.com/sdey1122/notes-app-frontend/raw/master/s1.png "Image 1")
-  ![Image 2](https://github.com/sdey1122/notes-app-frontend/master/s2.png "Image 2")
-  ![Image 2](https://github.com/sdey1122/notes-app-frontend/master/s2.png "Image 2")
-</p>
+![Image 1](https://github.com/sdey1122/notes-app-frontend/raw/master/s1.png "Image 1")
+![Image 2](https://github.com/sdey1122/notes-app-frontend/raw/master/s2.png "Image 2")
+![Image 3](https://github.com/sdey1122/notes-app-frontend/raw/master/s3.png "Image 3")
+
 
 ## Table of Contents
 - [Introduction](#introduction)
