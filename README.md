@@ -1,9 +1,9 @@
 <h1 align="center">Notes App Frontend Project</h1>
 
 <p align="center">
-  ![Image 1](s1.png?raw=true "Image 1")
-  ![Image 2](s2.png?raw=true "Image 2")
-  ![Image 2](s2.png?raw=true "Image 2")
+  ![Image 1](https://github.com/sdey1122/notes-app-frontend/raw/master/s1.png "Image 1")
+  ![Image 2](https://github.com/sdey1122/notes-app-frontend/master/s2.png "Image 2")
+  ![Image 2](https://github.com/sdey1122/notes-app-frontend/master/s2.png "Image 2")
 </p>
 
 ## Table of Contents
