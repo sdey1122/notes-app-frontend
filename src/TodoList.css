@@ -1,3 +1,26 @@
+/* Keyframes for slide-down fade-in animation */
+@keyframes slideDownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the animated heading */
+.animated-heading {
+  animation: slideDownFadeIn 1s ease-out;
+  font-size: 2.5rem;
+  color: #556cd6; /* Consistent with theme color */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Styling for the transition of Todo items */
 .todo-transition-enter {
   opacity: 0;
   transform: scale(0.9);
@@ -16,4 +39,77 @@
 .todo-transition-exit-active {
   opacity: 0;
   transition: opacity 500ms;
+}
+
+/* Styling for the form */
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Responsive flex layout for input and button */
+form input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+form button {
+  flex-shrink: 0;
+}
+
+/* Enhanced styling for list items */
+.MuiListItem-root {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly lighter hover effect */
+  }
+}
+
+/* Styling for list item text */
+.MuiListItemText-primary {
+  font-weight: 500;
+}
+
+/* Rounded buttons with consistent padding */
+.MuiButton-root {
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+/* Icon button colors matching the theme */
+.MuiIconButton-root {
+  color: #556cd6;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .animated-heading {
+    font-size: 2rem;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Global styling */
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/* Padding for the main container - Adjusted class name to match JSX */
+.grid-container {
+  padding: 20px;
 }
