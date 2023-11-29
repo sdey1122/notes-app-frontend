@@ -401,7 +401,14 @@ const TodoListThree = () => {
               }}
               style={{ marginRight: "10px" }}
             />
-            <Button variant="contained" color="primary" type="submit">
+            <Button
+              variant="contained"
+              style={{
+                backgroundColor: "blue",
+                color: "white",
+              }}
+              type="submit"
+            >
               Add
             </Button>
           </form>
@@ -482,7 +489,9 @@ const TodoListThree = () => {
                         </IconButton>
                         <IconButton
                           onClick={() => handleCancelEdit(index)}
-                          color="secondary"
+                          style={{
+                            color: "red",
+                          }}
                         >
                           <ClearIcon />
                         </IconButton>
@@ -498,7 +507,9 @@ const TodoListThree = () => {
                         </IconButton>
                         <IconButton
                           onClick={() => handleDeleteTodo(index)}
-                          color="secondary"
+                          style={{
+                            color: "red", // Set the color to red for the "Delete" button
+                          }}
                         >
                           <DeleteIcon />
                         </IconButton>
